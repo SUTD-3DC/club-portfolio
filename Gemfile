@@ -15,6 +15,9 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
+gem "slim-rails"
+# bootstrap popovers need tether
+gem 'rails-assets-tether','~>1.2.0'
 
 #Backend
 gem 'pg'
