@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// colors for testing, will remove later on
 .green{
   background-color: green;
 }
@@ -17,7 +18,42 @@
 .blue{
   background-color: blue;
 }
-
-.navigation{
-  height:10%;
+// Must I really put 2 display flexes?? (comment pls)
+.menu-bar{
+  height:100px;
+  display:flex;
+  border-bottom:solid black;
+  border-bottom-width: 1px;   
+  justify-content: flex-start;
+  align-items: flex-end;
+  .navigation{
+    justify-content: flex-end;
+    align-items: center;
+    display:flex;
+    .nav-item{
+      padding-bottom: 10px;
+      text-align: center;
+      font-family: raleway;
+    }
+  }
+  .logo
+  {
+    height:100px;
+    width: auto;
+  }
+  
 }
+
+.landing-jumbotron{
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: white;
+  padding:0;
+  .personal_image{
+    height:auto;
+    width:100%;
+  }
+
+}
+
