@@ -15,3 +15,60 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
 @import "styles/*";
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,900,700);
+
+.green{
+  background-color: green;
+}
+
+.red{
+  background-color: red;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.blue{
+  background-color: blue;
+}
+.meow{
+  height: 2000px;
+}
+
+
+.container-main{
+  padding: 0px;
+}
+
+.bottom-border{
+  border-bottom:solid black;
+  border-bottom-width: 1px;  
+}
+
+.menu-bar{
+  height:100px;
+  width:100%;
+  display:flex; 
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  .navigation{
+    justify-content: flex-end;
+    align-items: center;
+    display:flex;
+
+    .nav-item{
+      padding-bottom: 10px;
+      text-align: center;
+      font-family: raleway;
+    }
+
+  }
+
+  .logo
+  {
+    height:100px;
+    width: auto;
+  }
+  
+}
