@@ -18,24 +18,36 @@
 .blue{
   background-color: blue;
 }
-// Must I really put 2 display flexes?? (comment pls)
+
+.container-main{
+  padding: 0px;
+}
+
+.bottom-border{
+  border-bottom:solid black;
+  border-bottom-width: 1px;  
+}
+
 .menu-bar{
   height:100px;
-  display:flex;
-  border-bottom:solid black;
-  border-bottom-width: 1px;   
+  width:100%;
+  display:flex; 
   justify-content: flex-start;
   align-items: flex-end;
+
   .navigation{
     justify-content: flex-end;
     align-items: center;
     display:flex;
+
     .nav-item{
       padding-bottom: 10px;
       text-align: center;
       font-family: raleway;
     }
+
   }
+
   .logo
   {
     height:100px;
@@ -46,14 +58,36 @@
 
 .landing-jumbotron{
   display:flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: flex-start;
   background-color: white;
   padding:0;
-  .personal_image{
+  margin-bottom: 5px;
+
+  .jumbotron-text{
+    position: absolute;
+    top:5%;
+    left:0;
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    font-family: raleway;
+    font-weight: 900;
+    color: white;
+  }
+
+  .jumbotron-image{
     height:auto;
     width:100%;
   }
 
 }
+
+.guide-row{
+  height:40px;
+  text-align: center;
+  font-size: 3rem; 
+}
+
+
 
