@@ -4,18 +4,21 @@
     .col-md-4.col-lg-4
       =image_tag "3dclogo.png", class: "logo"
     .navigation.col-md-8.col-lg-8
-      .nav-item.col-md-3 The Team
-      .nav-item.col-md-3 Projects
-      .nav-item.col-md-3 Contact Us
+      .nav-item.link.col-md-3 data-target="#team-section"
+        |The Team 
+      .nav-item.link.col-md-3 data-target="#project-section"
+        |Projects
+      .nav-item.link.col-md-3 data-target="#contact-section"
+        |Contact Us
   .landing-jumbotron.bottom-border.jumbotron.col-md-12.col-lg-12
     =image_tag "jumbocropped.png", class: "jumbotron-image"
     .jumbotron-text
       | We make <u>beautiful</u> websites.
-.guide-row data-target=".rawr"
+.guide-row.link data-target="#team-section"
   i.fa.fa-chevron-down
 / First Section
 .container-main.container
-  .section-title.team-section.col-md-12.col-lg-12
+  .section-title#team-section.col-md-12.col-lg-12
     |<u>The Team</u>
   .person-desc.col-lg-4.col-md-4
     =image_tag "http://hhhproject.eu/wp-content/uploads/2014/06/blank_avatar1.gif", class: "avatar img-circle"
@@ -30,13 +33,17 @@
     .description
       |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet lobortis nulla, eu ultricies nibh consectetur id. Nunc id erat placerat, luctus odio in, tincidunt ipsum. In gravida est sed erat venenatis, et aliquet leo pellentesque. Aliquam ut neque quam. Integer pulvinar porta eros. Integer viverra lorem quis enim sodales, non consequat lacus commodo. Nulla pharetra sem ac lorem laoreet volutpat. Cras vitae lacus ac felis feugiat tempor. Pellentesque tempor purus nec nisi molestie, eu elementum ex accumsan. Maecenas eu nulla lobortis, interdum lectus nec, dapibus ligula. Ut at enim dignissim, aliquam massa scelerisque, tempor nisi. Curabitur laoreet ligula arcu.
 .container-main.container
-  .section-title.project-section.col-md-12.col-lg-12
+  .section-title#project-section.col-md-12.col-lg-12
     |<u>Projects</u>
   - @projects.each do |x|
-    .project-container.col-md-4.col-lg-4
-      =image_tag "http://lorempixel.com/400/400/cats", class: "project-image"
-      .project-title
-        =x.title
+    =link_to portfolio_path(x)
+      .project-container.col-md-4.col-lg-4
+        =image_tag "http://lorempixel.com/400/400/cats", class: "project-image"
+        .project-title
+          =x.title
 
+.container-main.container
+  .section-title.project-section.col-md-12.col-lg-12
+    | <u>Contact Us</u>
 
 

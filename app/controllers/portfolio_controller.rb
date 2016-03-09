@@ -3,6 +3,11 @@ class PortfolioController < ApplicationController
   def index
     @projects = Project.all
   end
+
+  def show
+    @project = Project.find(params[:id])
+  end
+
   #This will be the access to your contact me page, might be used later as a partial at the bottom of the landing page
   def contact
 
