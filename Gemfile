@@ -19,8 +19,10 @@ gem "slim-rails"
 # bootstrap popovers need tether
 gem 'rails-assets-tether','~>1.2.0'
 
+
 #Backend
 gem 'pg'
+gem "paperclip", "~> 4.3"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

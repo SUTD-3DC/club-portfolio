@@ -29,5 +29,14 @@
     =image_tag "http://hhhproject.eu/wp-content/uploads/2014/06/blank_avatar1.gif", class: "avatar img-circle"
     .description
       |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet lobortis nulla, eu ultricies nibh consectetur id. Nunc id erat placerat, luctus odio in, tincidunt ipsum. In gravida est sed erat venenatis, et aliquet leo pellentesque. Aliquam ut neque quam. Integer pulvinar porta eros. Integer viverra lorem quis enim sodales, non consequat lacus commodo. Nulla pharetra sem ac lorem laoreet volutpat. Cras vitae lacus ac felis feugiat tempor. Pellentesque tempor purus nec nisi molestie, eu elementum ex accumsan. Maecenas eu nulla lobortis, interdum lectus nec, dapibus ligula. Ut at enim dignissim, aliquam massa scelerisque, tempor nisi. Curabitur laoreet ligula arcu.
+.container-main.container
+  .section-title.project-section.col-md-12.col-lg-12
+    |<u>Projects</u>
+  - @projects.each do |x|
+    .project-container.col-md-4.col-lg-4
+      =image_tag "http://lorempixel.com/400/400/cats", class: "project-image"
+      .project-title
+        =x.title
+
 
 
