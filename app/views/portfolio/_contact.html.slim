@@ -1,0 +1,6 @@
+.form-group
+  = form_tag portfolio_contact_path(:portfolio_id) do
+    = text_field_tag :title, nil, :placeholder => "title", :class => "form-control"
+    = email_field_tag :email, nil, :placeholder => "blabla@blabla.com", :class => "form-control"
+    = text_area_tag :content, nil, :placeholder => "Your message for us", :class => "form-control"
+    = submit_tag "Send your message!", :class => "btn btn-default"
