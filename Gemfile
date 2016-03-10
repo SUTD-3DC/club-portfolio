@@ -17,7 +17,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem "slim-rails"
 # bootstrap popovers need tether
-gem 'rails-assets-tether','~>1.2.0'
+gem 'rails-assets-tether','~>1.1.1'
 
 
 #Backend
